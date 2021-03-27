@@ -15,7 +15,7 @@
 #SBATCH --partition=normal
 
 # 把输出重定向到 hello_slurm.txt。 如果使用 hello_%j_slurm.txt，其中的%j会被替换为任务编号
-#SBATCH -o hello_slurm_output.txt
+#SBATCH -o ~/shared/hello_slurm_output.txt
 
 # 申请1个GPU。 要申请多个GPU如4个，可以改为--gres=gpu:4
 #SBATCH --gres=gpu:1
