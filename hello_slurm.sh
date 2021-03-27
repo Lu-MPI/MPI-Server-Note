@@ -15,7 +15,7 @@
 #SBATCH --partition=normal
 
 # 把输出重定向到 hello_slurm.txt。 如果使用 hello_%j_slurm.txt，其中的%j会被替换为任务编号
-#SBATCH -o hello_slurm.txt
+#SBATCH -o hello_slurm_output.txt
 
 # 使用
 #SBATCH --gres=gpu:1
