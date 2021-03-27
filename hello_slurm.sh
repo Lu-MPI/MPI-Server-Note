@@ -17,8 +17,10 @@
 # 把输出重定向到 hello_slurm.txt。 如果使用 hello_%j_slurm.txt，其中的%j会被替换为任务编号
 #SBATCH -o hello_slurm_output.txt
 
-# 使用
+# 申请1个GPU。 要申请多个GPU如4个，可以改为--gres=gpu:4
 #SBATCH --gres=gpu:1
+
+# 申请1个CPU。要申请多个CPU如10个，可以改为--cpus-per-task=10
 #SBATCH --cpus-per-task=1
 
 # 指定最长运行时间，格式为days-hours:minutes:seconds
